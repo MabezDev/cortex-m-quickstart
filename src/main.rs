@@ -15,6 +15,7 @@ fn main() -> ! {
     asm::nop(); // To not have main optimize to abort in release mode, remove when you add code
 
     loop {
-        // your code goes here
+        let x = [0u8; 1];
+        let y = &x[..1024];
     }
 }
